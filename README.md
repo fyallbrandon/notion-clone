@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
+![Notion clone](https://github.com/fyallbrandon/notion-clone/assets/156007704/d5e8ce62-52f3-47aa-99df-ca058ff8cb44)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
