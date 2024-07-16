@@ -1,30 +1,40 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Notion clone](https://github.com/fyallbrandon/notion-clone/assets/156007704/d5e8ce62-52f3-47aa-99df-ca058ff8cb44)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Authentication
+- Create, update and delete notes
+- Create, update and delete images
+- Reorder notes
+- Change page title
+- Change page cover image
+- Create, update and delete pages
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
+The app is generated with Vite and uses the following technologies:
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- DndKit (drag and drop)
+- CSS Modules
+- Supabase (database, authentication, storage)
+- Netlify (hosting)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+
+## Running the app
+To run the app locally, you need to create a Supabase project and add the following environment variables to your `.env` file:
+
+```
+VITE_SUPABASE_URL=""
+VITE_SUPABASE_API_KEY=""
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Then run the following commands:
+
+```
+npm install
+npm run dev
+```

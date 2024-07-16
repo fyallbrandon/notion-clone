@@ -3,6 +3,7 @@ import { useAuthSession } from "./AuthSessionContext"
 import { Navigate } from "react-router-dom"
 import styles from "../utils.module.css"
 import { supabase } from "../supabaseClient"
+import logo from "../assets/Queue.png";
 
 export const Auth = () => {
     const [loading, setLoading] = useState(false)
@@ -29,25 +30,30 @@ export const Auth = () => {
     }
 
     return (
-        <div className={styles.centeredFlex}>
-            <div>
-                <h1>Notion-Clone App</h1>
-                <p>Sign in via magic link with your email below</p>
-                {loading ? ("Sending magic link...") : (
-                    <form onSubmit={handleLogin}>
-                        <label>Email: </label>
-                        <input
-                            type="email"
-                            id="email"
-                            value={email}
-                            onChange={e => setEmail(e.target.value)}
-                            placeholder="Your email"
-                        />
-                        <button>
-                            Send magic link
-                        </button>
-                    </form>
-                )}
+        <div className={styles.pageContainer}>
+            <img src={logo} alt="Logo" className={styles.logo} />
+            <div className={styles.centeredFlex}>
+                <div>
+                    <h1 className={styles.h1}>The <span className={styles.highlight}>Better</span> Way to Take Notes.</h1>
+                    <p>Sign in via magic link with your email below</p>
+                    {loading ? (
+                        "Sending magic link..."
+                    ) : (
+                        <form onSubmit={handleLogin} className={styles.form}>
+                            <label>Email: </label>
+                            <input
+                                type="email"
+                                id="email"
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
+                                placeholder="Your email"
+                            />
+                            <button className={styles.button}>
+                                Send magic link
+                            </button>
+                        </form>
+                    )}
+                </div>
             </div>
         </div>
     )
