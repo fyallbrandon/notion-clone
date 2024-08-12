@@ -1,6 +1,7 @@
-# React + TypeScript + Vite
+# Queue - Notion Clone App
 
-![Notion clone](https://github.com/fyallbrandon/notion-clone/assets/156007704/d5e8ce62-52f3-47aa-99df-ca058ff8cb44)
+<img width="1272" alt="Screen Shot 2024-08-11 at 7 41 26 PM" src="https://github.com/user-attachments/assets/19f9bc73-8ca4-43f0-a151-cb0c55a76f28">
+
 
 ## Features
 
