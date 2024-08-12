@@ -35,6 +35,11 @@ h1 {
   line-height: 1.1;
 }
 
+input {
+  padding: 0.5em;
+  margin-right: 5px; /* Adjusts padding for the input field */
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -47,9 +52,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #FFFFFF;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

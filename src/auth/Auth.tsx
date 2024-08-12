@@ -40,17 +40,18 @@ export const Auth = () => {
                         "Sending magic link..."
                     ) : (
                         <form onSubmit={handleLogin} className={styles.form}>
-                            <label>Email: </label>
-                            <input
-                                type="email"
-                                id="email"
-                                value={email}
-                                onChange={e => setEmail(e.target.value)}
-                                placeholder="Your email"
-                            />
-                            <button className={styles.button}>
+                                <label className={styles.email}>Email: </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    value={email}
+                                    onChange={e => setEmail(e.target.value)}
+                                    placeholder="Your email"
+                                    className={styles.input}
+                                />
+                                <button className={styles.button}>
                                 Send magic link
-                            </button>
+                                </button>
                         </form>
                     )}
                 </div>
